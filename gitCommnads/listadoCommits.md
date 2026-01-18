@@ -16,4 +16,4 @@ git log --pretty=format:"%h %ad %an | %s" --date=short
 
 Para volver a un commit especifico y crear uno nuevo en base al commit elegido ->
 
-git revert '<hash>'
+git revert `<head>`
