@@ -2,6 +2,10 @@
 
 Repositorio de práctica para rendir LPI Linux Essentials (010-160).
 
+Este repositorio organiza ejercicios, comandos y notas técnicas para desarrollar dominio práctico de Linux en la terminal y comprender conceptos evaluados en LPI Linux Essentials,
+ incluyendo flujo de trabajo con Git en entorno real.
+
+
 ## Objetivo
 - Practicar Linux en  terminal (bash) con ejercicios cortos.
 - Documentar comandos y conceptos del temario.
