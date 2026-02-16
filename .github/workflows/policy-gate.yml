@@ -1,0 +1,44 @@
+name: policy-gate
+
+on:
+  pull_request:
+    branches: [develop]
+    types: [opened, reopened, synchronize, ready_for_review]
+  pull_request_review:
+    types: [submitted, edited, dismissed]
+
+permissions:
+  pull-requests: read
+
+jobs:
+  require_fvgtekken_approval:
+    name: fvgtekken approval (develop)
+    runs-on: ubuntu-latest
+    if: github.event.pull_request.base.ref == 'develop'
+    steps:
+      - name: Check approval by fvgtekken
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const targetUser = "fvgtekken";
+            const { owner, repo } = context.repo;
+            const pull_number = context.payload.pull_request.number;
+
+            const { data: reviews } = await github.rest.pulls.listReviews({
+              owner,
+              repo,
+              pull_number,
+              per_page: 100,
+            });
+
+            // tomamos la ÚLTIMA review de fvgtekken (puede haber APPROVED / CHANGES_REQUESTED / etc.)
+            const latest = reviews
+              .filter(r => (r.user?.login || "").toLowerCase() === targetUser.toLowerCase())
+              .sort((a, b) => new Date(a.submitted_at) - new Date(b.submitted_at))
+              .at(-1);
+
+            if (!latest || latest.state !== "APPROVED") {
+              core.setFailed(`Missing required approval from ${targetUser}.`);
+            } else {
+              core.info(`OK: approved by ${targetUser}.`);
+            }
