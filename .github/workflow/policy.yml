@@ -1,19 +1,17 @@
 policy:
   approval:
-    - 'develop requires fvgtekken approval'
+    - only-fvgtekken-on-develop
 
 approval_rules:
-  - name: 'develop requires fvgtekken approval'
+  - name: only-fvgtekken-on-develop
     if:
       targets_branch:
         pattern: '^develop$'
     options:
-      invalidate_on_push: true
       allow_author: true
       allow_contributor: true
-      request_review:
-        enabled: true
-        mode: all-users
+      invalidate_on_push: true
+
     requires:
       count: 1
       users: ['fvgtekken']
