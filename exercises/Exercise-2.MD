@@ -7,4 +7,6 @@ creas un archivo de texto que contiene la info del comando cherry-pick y para qu
 4 - Crear un branch que se llama add-branch-concept creas un commit con el texto que explica para que es un merge
 creas un archivo que explica para que es el merge y los comandos mas basicos
 
-5 Crear otro branch que se llame concept-cherry-pick-merge aqui usando EL COMANDO cherry-pick para obtener en esta rama la info de ambas ramas.
+5 - Crear otro branch que se llame concept-cherry-pick-merge aqui usando EL COMANDO cherry-pick para obtener en esta rama la info de ambas ramas.
+
+6 - Parte importante de la ejercitacion es entender los 5 puntos anteriores
