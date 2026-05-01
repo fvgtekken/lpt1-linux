@@ -1,110 +1,176 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Welcome to Linux</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
 
-  <body>
-    <h1>Welcome to Linux</h1>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Linux Essentials Study Guide</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
 
-    <h2>LPI Linux Essentials Summary</h2>
+<body>
+  <h1>Linux Study Guide</h1>
+  <p>
+    This page provides a structured overview of the core topics required for the LPI Linux Essentials exam.
+    It focuses on fundamental Linux concepts such as the command line, file system, processes, networking,
+    users, groups, permissions, and open-source principles, independent of any specific distribution.
+  </p>
 
+  <h2>Core Concepts</h2>
+
+  <ul>
+    <li>Understand Linux and open-source concepts.</li>
+    <li>Use the command line and basic shell commands.</li>
+    <li>Manage files and directories.</li>
+    <li>Understand processes and system components.</li>
+    <li>Learn basic networking concepts.</li>
+    <li>Manage users, groups, and file permissions.</li>
+  </ul>
+  <h2>Exam Topics</h2>
+
+  <section>
+    <h3>1. Linux Community and Open Source</h3>
     <ul>
-      <li>Understand the Linux operating system and open-source concepts.</li>
-      <li>Learn basic command-line usage and file management.</li>
-      <li>Understand users, groups, permissions, and processes.</li>
-      <li>Learn simple networking concepts and common Linux tools.</li>
-      <li>Understand security basics and system administration foundations.</li>
+      <li>Linux distributions and ecosystem</li>
+      <li>Open-source software and licenses</li>
+      <li>Common open-source applications</li>
+    </ul>
+  </section>
+
+  <section>
+    <h3>2. Finding Your Way in a Linux System</h3>
+    <ul>
+      <li>Basic command-line usage</li>
+      <li>Shell syntax and environment variables</li>
+      <li>Getting help (man, info)</li>
+      <li>Files and directories navigation</li>
+    </ul>
+  </section>
+
+  <section>
+    <h3>3. The Power of the Command Line</h3>
+    <ul>
+      <li>File archiving and compression</li>
+      <li>Searching and processing text</li>
+      <li>Input/output redirection and pipes</li>
+      <li>Basic scripting concepts</li>
+    </ul>
+  </section>
+
+  <section>
+    <h3>4. The Linux Operating System</h3>
+    <ul>
+      <li>System architecture and components</li>
+      <li>Hardware basics</li>
+      <li>Storage and file locations</li>
+      <li>Processes and system monitoring</li>
+      <li>System logs and memory usage</li>
+      <li>Networking fundamentals</li>
+    </ul>
+  </section>
+
+  <section>
+    <h3>5. Security and File Permissions</h3>
+    <ul>
+      <li>User types and authentication</li>
+      <li>User identification and system access</li>
+      <li>Users and groups management</li>
+      <li>File permissions and ownership</li>
+    </ul>
+  </section>
+
+  <section id="linux-distributions">
+    <h2>Linux Distributions</h2>
+    <p>
+      Linux is available in many distributions such as Ubuntu, Debian, Red Hat, and openSUSE.
+      Each distribution uses the same Linux kernel but may differ in package management,
+      release cycle, and default tools.
+    </p>
+  </section>
+  <section id="linux-benefits" class="linux-benefits">
+    <h2>Why Learn Linux?</h2>
+    <p>
+      Linux is widely used in servers, cloud platforms, cybersecurity,
+      software development, and DevOps environments. Learning Linux gives you
+      strong technical foundations and helps you understand how modern systems
+      work.
+    </p>
+  </section>
+
+  <section id="files-and-paths">
+    <h2>Files, Directories, and Paths</h2>
+
+    <h3>What is a file?</h3>
+    <p>
+      A file stores data, such as text, program code, or binary information.
+    </p>
+
+    <h3>What is a directory?</h3>
+    <p>
+      A directory is used to organize files inside the Linux file system.
+      A directory can contain files and other directories.
+    </p>
+
+    <h3>Absolute path</h3>
+    <p>
+      An absolute path shows the complete location of a file or directory,
+      starting from the root directory <code>/</code>.
+    </p>
+    <ul>
+      <li><code>/home/user</code></li>
+      <li><code>/etc</code></li>
+      <li><code>/home/user/Documents/notes.txt</code></li>
     </ul>
 
-    <section id="ubuntu-info">
-      <h2>About Ubuntu</h2>
-      <img
-        src="https://upload.wikimedia.org/wikipedia/commons/3/35/Tux.svg"
-        alt="Tux Penguin"
-        width="120"
-      />
-      <p>Ubuntu is a popular Linux distribution based on Debian.</p>
-    </section>
+    <h3>Relative path</h3>
+    <p>
+      A relative path shows the location of a file or directory from the
+      current working directory. It does not start with <code>/</code>.
+    </p>
+    <ul>
+      <li><code>Documents/notes.txt</code></li>
+      <li><code>Reports/report2018.txt</code></li>
+    </ul>
 
-    <section id="linux-benefits" class="linux-benefits">
-      <h2>Why Learn Linux?</h2>
-      <p>
-  Linux is widely used in servers, cloud platforms, cybersecurity,
-  software development, and DevOps environments. Learning Linux gives you
-  strong technical foundations and helps you understand how modern systems
-  work.
-</p>
-    </section>
+    <h3>Why paths matter</h3>
+    <p>
+      Understanding files, directories, and paths is essential for navigating
+      the Linux file system and using commands such as <code>cd</code>,
+      <code>ls</code>, and <code>pwd</code>.
+    </p>
 
-    <section id="files-and-paths">
-      <h2>Files, Directories, and Paths</h2>
+    <p>
+      These concepts are essential for working with commands like <code>cd</code>,
+      <code>ls</code>, and understanding how Linux organizes data internally.
+    </p>
+  </section>
 
-      <h3>What is a file?</h3>
-      <p>
-        A file stores data, such as text, program code, or binary information.
-      </p>
+  <section id="basic-commands">
+    <h2>Basic Linux Commands</h2>
+    <p>
+      These are fundamental commands required for navigating and managing a Linux system through the command line.
+    </p>
+    <ul>
+      <li>
+        <strong>pwd</strong> – Print working directory (shows current path)
+      </li>
+      <li><strong>ls</strong> – List directory contents</li>
+      <li><strong>cd</strong> – Change directory</li>
+      <li><strong>mkdir</strong> – Create a new directory</li>
+      <li><strong>cp</strong> – Copy files or directories</li>
+      <li><strong>mv</strong> – Move or rename files</li>
+      <li><strong>rm</strong> – Remove files or directories</li>
+    </ul>
+  </section>
 
-      <h3>What is a directory?</h3>
-      <p>
-        A directory is used to organize files inside the Linux file system.
-        A directory can contain files and other directories.
-      </p>
+  <section id="linux-resources">
+    <h2>Useful Linux Resources</h2>
+    <ul>
+      <li><a href="https://www.lpi.org">LPI Official Website</a></li>
+      <li><a href="https://ubuntu.com">Ubuntu Official Website</a></li>
+      <li><a href="https://www.gnu.org">GNU Project</a></li>
+    </ul>
+  </section>
+</body>
 
-      <h3>Absolute path</h3>
-      <p>
-        An absolute path shows the complete location of a file or directory,
-        starting from the root directory <code>/</code>.
-      </p>
-      <ul>
-        <li><code>/home/user</code></li>
-        <li><code>/etc</code></li>
-        <li><code>/home/user/Documents/notes.txt</code></li>
-      </ul>
-
-      <h3>Relative path</h3>
-      <p>
-        A relative path shows the location of a file or directory from the
-        current working directory. It does not start with <code>/</code>.
-      </p>
-      <ul>
-        <li><code>Documents/notes.txt</code></li>
-        <li><code>Reports/report2018.txt</code></li>
-      </ul>
-
-      <h3>Why paths matter</h3>
-      <p>
-        Understanding files, directories, and paths is essential for navigating
-        the Linux file system and using commands such as <code>cd</code>,
-        <code>ls</code>, and <code>pwd</code>.
-      </p>
-    </section>
-
-    <section id="basic-commands">
-      <h2>Basic Linux Commands</h2>
-      <ul>
-        <li>
-          <strong>pwd</strong> – Print working directory (shows current path)
-        </li>
-        <li><strong>ls</strong> – List directory contents</li>
-        <li><strong>cd</strong> – Change directory</li>
-        <li><strong>mkdir</strong> – Create a new directory</li>
-        <li><strong>cp</strong> – Copy files or directories</li>
-        <li><strong>mv</strong> – Move or rename files</li>
-        <li><strong>rm</strong> – Remove files or directories</li>
-      </ul>
-    </section>
-
-    <section id="linux-resources">
-      <h2>Useful Linux Resources</h2>
-      <ul>
-        <li><a href="https://www.lpi.org">LPI Official Website</a></li>
-        <li><a href="https://ubuntu.com">Ubuntu Official Website</a></li>
-        <li><a href="https://www.gnu.org">GNU Project</a></li>
-      </ul>
-    </section>
-  </body>
 </html>
