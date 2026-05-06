@@ -1,0 +1,54 @@
+<section id="javascript-first-functions">
+  <h2>First JavaScript Exercises</h2>
+
+  <p>These exercises are for learning what a variable is, what a function is, and how to print a result on the page.</p>
+
+  <h3>Exercise 1: Print a variable</h3>
+  <p id="result-1"></p>
+
+  <h3>Exercise 2: Use a simple function</h3>
+  <p id="result-2"></p>
+
+  <h3>Exercise 3: Send a name to a function</h3>
+  <p id="result-3"></p>
+
+  <h3>Exercise 4: Send two numbers to a function</h3>
+  <p id="result-4"></p>
+</section>
+
+<script>
+  // This function prints text in the HTML page
+  function printText(elementId, text) {
+    document.getElementById(elementId).textContent = text;
+  }
+
+  // Exercise 1
+  // A variable stores a value
+  let name = 'Ana';
+
+  printText('result-1', name);
+
+  // Exercise 2
+  // A function is a block of code that we can use
+  function sayHello() {
+    return 'Hello!';
+  }
+
+  printText('result-2', sayHello());
+
+  // Exercise 3
+  // This function receives a name
+  function sayHelloToUser(userName) {
+    return 'Hello ' + userName;
+  }
+
+  printText('result-3', sayHelloToUser('Ana'));
+
+  // Exercise 4
+  // This function receives two numbers
+  function addNumbers(numberOne, numberTwo) {
+    return numberOne + numberTwo;
+  }
+
+  printText('result-4', addNumbers(2, 3));
+</script>
