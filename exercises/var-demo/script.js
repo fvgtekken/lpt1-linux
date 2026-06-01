@@ -23,8 +23,8 @@ form.addEventListener('submit', function (event) {
   const lastnameIsValid = lastname.trim() !== '' && Number.isNaN(Number(lastname));
 
   // Pregunta si dni y name son validos, de ser correcto guarda true
-  //const formIsValid = dniIsValid && nameIsValid && lastnameValid;
-  const formIsValid = dniIsValid && nameIsValid;
+  const formIsValid = dniIsValid && nameIsValid && lastnameIsValid;
+  //const formIsValid = dniIsValid && nameIsValid;
 
   // Esto se llama ternaria es parecido a un if, pregunta el valor si es true
   // en este caso y asinga un valor a validationStatus
