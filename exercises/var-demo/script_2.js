@@ -1,4 +1,5 @@
 let GlobalName = 'Test Global Name 0';
+const form = document.getElementById('personForm');
 
 function getForm() {
   const form = document.getElementById('personForm');
@@ -9,8 +10,22 @@ getForm();
 
 function interalName() {
   let GlobalName = 'Test Internal';
-
   console.log('GlobalName', GlobalName);
+
+  function Test2() {
+    let GlobalName = 'Test Internal 2';
+  }
+
+  function Test3() {
+    let GlobalName = 'Test Internal 3';
+    console.log('Test3', GlobalName);
+  }
+
+  function Test4() {
+    let GlobalName = 'Test Internal 4';
+    console.log('Test4', GlobalName);
+  }
+
   GlobalName = 'Naaa';
   console.log('function interalName GlobalName--->', GlobalName);
   GlobalName = 'Naaa 2';
