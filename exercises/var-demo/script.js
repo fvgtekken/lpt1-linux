@@ -12,6 +12,7 @@ form.addEventListener('submit', function (event) {
   // getElementById obtiene el valor del dni (Buscar una etiqueta html con el id dni)
   const dni = document.getElementById('dni').value;
   const name = document.getElementById('name').value;
+  const lastname = document.getElementById('lastname').value;
 
   // La funcion trim se encarga de eliminar los espacios dentro de un string
   // ' Ana' ->  despues de aplicar trim -> 'Ana'
@@ -19,6 +20,7 @@ form.addEventListener('submit', function (event) {
   // !Number.isNaN(Number(dni))-  Chequea si el valor es un numero y no un string
   const dniIsValid = dni.trim() !== '' && !Number.isNaN(Number(dni));
   const nameIsValid = name.trim() !== '' && Number.isNaN(Number(name));
+  const lastnameIsValid = lastname.trim() !== '' && Number.isNaN(Number(lastname));
 
   // Pregunta si dni y name son validos, de ser correcto guarda true
   //const formIsValid = dniIsValid && nameIsValid && lastnameValid;
