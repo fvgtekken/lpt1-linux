@@ -26,20 +26,37 @@ function interalName() {
     console.log('Test4', GlobalName);
   }
 
-  GlobalName = 'Naaa';
-  console.log('function interalName GlobalName--->', GlobalName);
-  GlobalName = 'Naaa 2';
-  console.log('function interalName GlobalName--->', GlobalName);
-  GlobalName = 'Naaa 3';
-  console.log('function interalName GlobalName--->', GlobalName);
-  //let internalName = 'Pertenezco a InternalName Function';
+function Set1() {
+  Auto = 2;
+  console.log(Auto);
+}
+function Set2() {
+  Auto = 3;
+  console.log(Auto);
+}
+function Set3() {
+  let Auto = 4;
+  console.log(Auto);
+}
+Set1();
+Set2();
+Set3();
+console.log("PRUEBA SET");
 
-  //console.log('function interalName--->', internalName);
+GlobalName = 'Naaa';
+console.log('function interalName GlobalName--->', GlobalName);
+GlobalName = 'Naaa 2';
+console.log('function interalName GlobalName--->', GlobalName);
+GlobalName = 'Naaa 3';
+console.log('function interalName GlobalName--->', GlobalName);
+//let internalName = 'Pertenezco a InternalName Function';
 
-  if (true) {
-    let GlobalName = 'Dentro de If';
-    console.log('GlobalName', GlobalName);
-  }
+//console.log('function interalName--->', internalName);
+
+if (true) {
+  let GlobalName = 'Dentro de If';
+  console.log('GlobalName', GlobalName);
+}
 }
 
 function ChangeGlobalName() {
@@ -67,3 +84,4 @@ const document_v2 = {
 };
 
 document_v2.getElementById_v2();
+interalName();
