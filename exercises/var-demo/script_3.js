@@ -1,22 +1,23 @@
 let Auto = 1;
-function Set1() {
 
-Auto = 2;
+function Set1(valor) {
+
+Auto = valor;
 console.log(Auto);
 }
 
-function Set2() {
+function Set2(valor) {
 
-  Auto = 3;
+  Auto = valor;
   console.log(Auto);
 }
 
-function Set3() {
+function Set3(valor) {
 
-  Auto = 4;
+  Auto = valor;
   console.log(Auto);
 }
 
-Set1();
-Set2();
-Set3();
+Set1(2);
+Set2(3);
+Set3(4);
