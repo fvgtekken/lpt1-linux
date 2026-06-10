@@ -1,6 +1,6 @@
 let velocidad = 4 // variable global // el numero 4 es el valor inicial de la variable global velocidad //
 
-function acelerar() { // el nombre de la funcion es acelerar //
+function acelerar(valor) { // el nombre de la funcion es acelerar //
     velocidad = 5; // el numero 5 es el nuevo valor de la variable global velocidad //
 
     return velocidad; // retur devuelve el nuevo valor de la variable global velocidad //

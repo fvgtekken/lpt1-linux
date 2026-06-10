@@ -1,10 +1,12 @@
-let Velocidad = 1
+let Velocidad = 1 //SCOPE ROOT
 
-const velocidadMaxima = 120
+const velocidadMaxima = 120 //SCOPE ROOT
 const velocidadMedia = 80
 const velocidadMinima = 0
 
 function aumentarVelocidad() {
+    // EL SCOPE DE AUMENTAR VELOCIDAD EN ESTE CASO DISPONE DEL SCOPE
+    //  GLOBAL DE VELOCIDAD
     Velocidad = velocidadMaxima; 
     console.log(Velocidad);
 }
@@ -17,6 +19,10 @@ function acelerar() {
 function frenar() {
     Velocidad = velocidadMinima;
     console.log(Velocidad);
+let V = 'V'; 
+
+console.log(V)
+
 }
 
 aumentarVelocidad();
