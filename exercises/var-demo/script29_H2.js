@@ -1,7 +1,7 @@
 function greet() {
   console.log("Hello from greet!");
 }
-var animal = "dog";
+var animal // = "dog";
 greet();
 
 console.log(animal);

@@ -2,7 +2,7 @@ function sayHello() {
   console.log("Hello from function declaration");
 }
 var sayGoodbye = function () {
-  console.log("Goodbye from function expression");
+  console.log//("Goodbye from function expression");
 }
 var name// = "Fede";
 console.log(name); 

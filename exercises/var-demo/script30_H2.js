@@ -1,7 +1,7 @@
 function login() {
   console.log("Logging in...");
 }
-var username = "Maria";
+var username = //"Maria";
 console.log(username);
 
 login();

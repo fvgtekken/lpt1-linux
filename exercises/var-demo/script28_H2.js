@@ -1,7 +1,7 @@
 function sayWelcome() {
     console.log("Welcome!");
 }
-var score = 100;
+var score  // = 100;
 console.log(score);
 
 
