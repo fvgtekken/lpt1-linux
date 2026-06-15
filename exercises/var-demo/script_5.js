@@ -3,7 +3,7 @@ const velocidadMedia = 80;
 const velocidadMinima = 0;
 
 function mostrarVelocidadMaxima() {
-
+velocidadMaxima = 'Volpiani'
     console.log('velocidadMaxima', velocidadMaxima);
 }
 

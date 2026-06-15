@@ -1,11 +1,11 @@
+var username; //"Maria";
 console.log(username);
 
 login();
 
 const password = "1234";
 
-var username = "Maria";
-
+username = "Maria";
 console.log(password);
 
 function login() {

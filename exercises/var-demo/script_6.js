@@ -1,5 +1,5 @@
 let Velocidad = 1 //SCOPE ROOT
-
+let V = 'V'
 const velocidadMaxima = 120 //SCOPE ROOT
 const velocidadMedia = 80
 const velocidadMinima = 0
@@ -19,12 +19,14 @@ function acelerar() {
 function frenar() {
     Velocidad = velocidadMinima;
     console.log(Velocidad);
-let V = 'V'; 
-
-console.log(V)
-
+    
 }
+function separar() {
+V = 'V'; 
 
+console.log(V);
+}
 aumentarVelocidad();
 acelerar();
 frenar();
+console.log(V);

@@ -1,7 +1,7 @@
 function sayHi() {
   console.log("Hi from sayHi!");
 }
-var city = // "Buenos Aires";
+var city // "Buenos Aires";
 console.log(city);
 
 
