@@ -1,7 +1,17 @@
 const nombre = 'Natalia'
 let apellido = 'Volpiani'
-let guardaValor = nombre
+let otro = nombre
 
+const nombre = function mostrar() {
+    console.log(nombre)
+}
+function mostrar() {
+    console.log(nombre);
+}
 
+nombre();
+mostrar(); 
 
-console.log(guardaValor);
+// Uncaught --> script_32.js:5
+//  SyntaxError: Identifier 
+// 'nombre' has already been declared (at script_32.js:5:7)
