@@ -1,3 +1,5 @@
+//GET
+
 const pokemonNames = ["pikachu", "bulbasaur", "charmander", "squirtle", "eevee"];
 
 for (let i = 0; i <pokemonNames.length; i++) {
